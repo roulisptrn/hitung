@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+	 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+	 </script>
+
+	</head>
+	
+	<body>
+	<h1 style="color:blue;">Let's Drawing with me! :)</style></h1>
+	 <div ng-app="">
+	 <table class="table">
+	 <tbody>
+	 <tr>
+	  <td>Masukkan panjang:</td>
+	  <td> <input type="text" ng-model="height" placeholder="100px" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan lebar:</td>
+	  <td><input type="text" ng-model="width" placeholder="100px" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan warna background:</td>
+	  <td><input type="color" ng-model="ba" placeholder="cyan" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan border-radius:</td>
+	  <td><input type="text" ng-model="br" placeholder="200px" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan tipe border:</td>
+	  <td><input type="text" ng-model="bt" placeholder="solid" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan lebar border:</td>
+	  <td><input type="text" ng-model="l" placeholder="10px" /></td>
+	  </tr>
+	  <tr>
+	  <td>Masukkan warna border:</td>
+	  <td><input type="color" ng-model="bc" placeholder="blue" /></td>
+	  </tr>
+	  </tbody>
+	<div id="ganti" style="width:{{width}};height:{{height}};background-color:{{ba}};margin:auto;border-radius:{{br}};border: {{bt}} {{l}}{{bc}};"></div>
+	 </div>
+	</body>
+	
+</html>
